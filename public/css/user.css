@@ -1679,6 +1679,16 @@ strong {
     line-height: normal;
 }
 
+.button-kuis{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.btn-kuis{
+    padding: 6px 2rem;
+}
+
 
 
 

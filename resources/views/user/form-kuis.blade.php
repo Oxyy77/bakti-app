@@ -21,6 +21,13 @@
                 
             </textarea>
         </div>
+        <div class="row">
+         <div class="col-md-12 d-flex justify-content-center">
+            <button class="button-kuis" >
+                <div class="btn btn-first btn-kuis ">Simpan</div>
+                </button> 
+         </div>
+        </div>
     </div>
 </div>
 
