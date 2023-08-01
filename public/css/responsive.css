@@ -1,0 +1,1035 @@
+@media screen and (max-width: 480px) {
+
+    .navbar-nav .nav-link{
+        margin-top: 15px;
+        margin-bottom: -50px;
+
+    }
+
+    .btn-nav{
+        margin-top: 30px;
+    }
+
+    .navbar {
+        position: fixed!important;
+        height: auto!important;
+
+    }
+
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .nav-logo{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        left: 16px;
+        margin-top: 28px;
+    }
+
+    #hero img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 120px;
+    }
+
+    .hero{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .col-4 {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .col-9 {
+        margin-top: 1em;
+    }
+
+
+    /* .col-4 {
+     width: 200px;
+   } */
+
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+        gap: 10px;
+    }
+
+    .mx-auto {
+        margin-left: 0!important;
+    }
+
+    .btn-second {
+        margin-top: 48px;
+
+        height: 32px;
+        font-size: px;
+
+    }
+    button.btn{
+        width: 71px;
+        font-size: 12px;
+    }
+
+    /* intro */
+
+
+    .intro-img {
+        width:70%;
+        display: flex;
+        justify-content: center;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+
+
+    .intro-text {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    #intro p {
+        margin-top: 0;
+        left: 0;
+
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* login pop up */
+
+    .login-box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center!important;
+    }
+
+    .login-box h2{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .button-login{
+        margin-top: 1rem;
+        padding: 1.2rem 4.5rem;
+    }
+
+    .button-forgot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center!important;
+
+    }
+    .form-control{
+        width: 14rem;
+    }
+
+    .form-check{
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    #closeIcon2{
+        top: -100px;
+    }
+
+    /* sidebar user */
+    .sidebar{
+        width: 10%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+
+    /* .sidebar-column{
+        width: 12%!important;
+    } */
+
+    .content-column{
+        padding: 0;
+    }
+
+    .sidebar-main{
+        width: 10%;
+        display: none;
+    }
+
+    .sidebar-col{
+        padding: 0;
+    }
+
+    .sidebar-header,
+    .sidebar-header h2{
+        display: none;
+    }
+
+    .nav-link img{
+
+    }
+    .link-name{
+        display: none;
+    }
+
+    .menu-items{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+
+
+    .nav-links{
+        padding: 0;
+
+    }
+
+    .nav-link,
+    .nav-active {
+        width: 38px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link img ,
+    .nav-active img {
+        margin: 0;
+    }
+
+    .nav-active img {
+        position: relative;
+        left: 6px;
+    }
+
+
+    .welcome-header h2{
+        font-size: 1rem;
+    }
+    .welcome-header p{
+        font-size: 0.75rem;
+    }
+
+    .text-content{
+
+    }
+
+    /* dashboard */
+
+
+    .profile-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        /* gap: 7.5rem; */
+    }
+
+    .profile-header{
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    .dashboard-main{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container-header{
+        width: 100%;
+        margin: 0;
+        padding: 1rem 2%;
+    }
+
+    .name-header {
+        display: none;
+    }
+
+    .kolom1,
+    .kolom2 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .countdown-content img{
+        width: 2rem;
+    }
+
+    .countdown-content h4{
+        font-size: 1rem;
+    }
+
+    .countdown-box {
+        width: 18rem!important;
+        height: 4rem!important;
+    }
+
+    .countdown-fill{
+        width: 2.5rem!important;
+        height: 2.5rem!important;
+        border-radius: 0.5rem;
+    }
+
+    .countdown-fill p{
+        font-size: 1rem;
+    }
+
+    .card-body h6{
+        font-size: 0.5rem;
+    }
+
+    /* coming soon*/
+
+    .cm-main {
+        padding: 2rem 3rem;
+        height: 100vh;
+    }
+
+    .coming-header{
+        margin-top: 4rem;
+    }
+    .img-coming{
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .count{
+        gap: 1rem!important;
+        justify-content: center!important;
+    }
+
+    .countdown{
+        margin-top: 5rem;
+        position: relative;
+        top: 0px;
+    }
+
+    .count-main{
+        width: 20%;
+    }
+
+    .count-hari{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .count-hari p{
+        font-size: 1.5rem;
+    }
+
+    .count-lable{
+        font-size: 0.4rem;
+    }
+
+    .count-final-date h1{
+        font-size: 0.75rem;
+        /* margin-left: 1.5rem; */
+    }
+
+    .coming-announ p{
+        font-size: 0.75rem;
+    }
+
+    .img-coming2{
+        position: relative;
+        top: 320px;
+    }
+
+    .blank {
+        padding: 0.8rem ;
+        height: 2rem;
+        border: 0.4rem solid #221737;
+        position: relative;
+        top: -300px;
+        margin-bottom: 2rem;
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 0.5rem;
+    }
+
+    .footer img{
+        width: 2.5rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) and (min-width: 480px) {
+
+    .navbar-nav .nav-link{
+        margin-top: 15px;
+        margin-bottom: -50px;
+
+    }
+
+
+
+    .btn-nav{
+        margin-top: 30px;
+    }
+
+    .navbar {
+        position: fixed!important;
+        height: auto!important;
+
+    }
+
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .nav-logo{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        left: 16px;
+        margin-top: 28px;
+    }
+
+    #hero img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 120px;
+    }
+
+    .hero{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .col-4 {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .col-9 {
+        margin-top: 1em;
+    }
+
+
+    /* .col-4 {
+     width: 200px;
+   } */
+
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+        gap: 10px;
+    }
+
+    .mx-auto {
+        margin-left: 0!important;
+    }
+
+    .btn-second {
+        margin-top: 48px;
+
+        height: 32px;
+        font-size: px;
+
+    }
+    button.btn{
+        width: 71px;
+        font-size: 12px;
+    }
+
+    /* intro */
+
+
+    .intro-img {
+        width:70%;
+        display: flex;
+        justify-content: center;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+
+
+    .intro-text {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    #intro p {
+        margin-top: 0;
+        left: 0;
+
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* login pop up */
+
+    .login-box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center!important;
+    }
+
+    .login-box h2{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .button-login{
+        margin-top: 1rem;
+        padding: 1.2rem 4.5rem;
+    }
+
+    .button-forgot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center!important;
+
+    }
+    .form-control{
+        width: 14rem;
+    }
+
+    .form-check{
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    #closeIcon2{
+        top: -100px;
+    }
+
+    /* .sidebar{
+        width: 10%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .sidebar-column{
+        width: 16%!important;
+    } */
+
+    .sidebar-main{
+        width: 100%;
+    }
+
+    .sidebar-col{
+        padding: 0;
+    }
+
+    .sidebar-header,
+    .sidebar-header h2{
+        display: none;
+    }
+
+    .nav-link img{
+
+    }
+    .link-name{
+        display: none;
+    }
+
+    .menu-items{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+
+
+    .nav-links{
+        padding: 0;
+
+    }
+
+    .nav-link,
+    .nav-active {
+        width: 38px;
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-link img ,
+    .nav-active img {
+        margin: 0;
+    }
+
+    .nav-active img {
+        position: relative;
+        left: 6px;
+    }
+
+    .welcome-header h2{
+        font-size: 1rem;
+    }
+    .welcome-header p{
+        font-size: 0.75rem;
+    }
+
+    .text-content{
+
+    }
+
+    /* coming soon*/
+
+    .cm-main {
+        padding: 2rem 3rem;
+        height: 100vh;
+    }
+
+    .coming-header{
+        margin-top: 4rem;
+    }
+    .img-coming{
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .count{
+        gap: 1rem!important;
+        justify-content: center!important;
+    }
+
+    .countdown{
+        margin-top: 5rem;
+        position: relative;
+        top: 0px;
+    }
+
+    .count-main{
+        width: 20%;
+    }
+
+    .count-hari{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .count-hari p{
+        font-size: 1.5rem;
+    }
+
+    .count-lable{
+        font-size: 0.6rem;
+    }
+
+    .count-final-date h1{
+        font-size: 0.75rem;
+    }
+
+    .coming-announ p{
+        font-size: 0.75rem;
+    }
+
+    .img-coming2{
+        position: relative;
+        top: 320px;
+    }
+
+    .blank {
+        padding: 0.8rem ;
+        height: 2.5rem;
+        border: 0.4rem solid #221737;
+        position: relative;
+        top: -280px;
+        margin-bottom: 2rem;
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 0.5rem;
+    }
+
+    .footer img{
+        width: 2.5rem;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .navbar-nav .nav-link{
+        margin-top: 15px;
+        margin-bottom: -50px;
+
+    }
+
+
+
+    .btn-nav{
+        margin-top: 30px;
+    }
+
+    .navbar {
+        position: fixed!important;
+        height: auto!important;
+
+    }
+
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .nav-logo{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        left: 16px;
+        margin-top: 28px;
+    }
+
+    #hero img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 120px;
+    }
+
+    .hero{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .col-4 {
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .col-9 {
+        margin-top: 1em;
+    }
+
+
+    /* .col-4 {
+     width: 200px;
+   } */
+
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+        gap: 10px;
+    }
+
+    .mx-auto {
+        margin-left: 0!important;
+    }
+
+    .btn-second {
+        margin-top: 48px;
+
+        height: 32px;
+        font-size: px;
+
+    }
+    button.btn{
+        width: 71px;
+        font-size: 12px;
+    }
+
+    /* intro */
+
+
+    .intro-img {
+        width:70%;
+        display: flex;
+        justify-content: center;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+
+
+    .intro-text {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    #intro p {
+        margin-top: 0;
+        left: 0;
+
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* login pop up */
+
+    .login-box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center!important;
+    }
+
+    .login-box h2{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .button-login{
+        margin-top: 1rem;
+        padding: 1.2rem 4.5rem;
+    }
+
+    .button-forgot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center!important;
+
+    }
+    .form-control{
+        width: 14rem;
+    }
+
+    .form-check{
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    #closeIcon2{
+        top: -100px;
+    }
+
+    .nav-link,
+    .nav-active {
+        width: 38px;
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* coming soon*/
+
+    .cm-main {
+        padding: 2rem 3rem;
+        height: 100vh;
+    }
+
+    .coming-header{
+        margin-top: 4rem;
+    }
+    .img-coming{
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .count{
+        gap: 0.5rem!important;
+        justify-content: center!important;
+    }
+
+    .countdown{
+        margin-top: 5rem;
+        position: relative;
+        top: 10px;
+    }
+
+    .count-main{
+        width: 20%;
+    }
+
+    .count-hari{
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .count-hari p{
+        font-size: 1.8rem;
+    }
+
+    .count-lable{
+        font-size: 0.6rem;
+    }
+
+    .count-final-date h1{
+        font-size: 1rem;
+    }
+
+    .coming-announ p{
+        font-size: 1rem;
+    }
+
+    .img-coming2{
+        position: relative;
+        top: 320px;
+    }
+
+    .blank {
+        padding: 0.8rem ;
+        height: 3.2rem;
+        border: 0.4rem solid #221737;
+        position: relative;
+        top: -290px;
+        margin-bottom: 2rem;
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 0.7rem;
+    }
+
+    .footer img{
+        width: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+    .cm-main{
+        height: 100vh;
+    }
+
+    .count{
+        gap: 1rem!important;
+        justify-content: flex-end!important;
+    }
+
+    .count-main{
+        width: 20%;
+    }
+
+    .count-hari{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .count-hari p{
+        font-size: 1.8rem;
+    }
+
+    .count-lable{
+        font-size: 0.5rem;
+    }
+
+    .count-final-date h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .coming-announ p{
+        font-size: 1rem;
+    }
+
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+    .blank {
+        padding: 2rem ;
+        height: 3rem;
+        border: 0.6rem solid #221737;
+        position: relative;
+
+    }
+
+    .blank::after,
+    .blank::before {
+        inset: 1rem;
+    }
+}
