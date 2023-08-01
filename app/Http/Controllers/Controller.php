@@ -19,6 +19,7 @@ class Controller extends BaseController
         return view('user.profile', compact('currentPage'));
     }
 
+    
 //    public function showDashboard()
 //    {
 //        $currentPage = 'dashboard';
@@ -45,6 +46,13 @@ class Controller extends BaseController
         $currentPage = 'pengenalan-ukm';
         $user = Auth::user();
         return view('user.ukm', compact('currentPage','user'));
+    }
+
+    public function showKuisUKM(Request $request)
+    {
+        $currentPage = 'pengenalan-ukm';
+        $user = Auth::user();
+        return view('user.form-kuis', compact('currentPage','user'));
     }
 
     public function showSertifikat(Request $request)

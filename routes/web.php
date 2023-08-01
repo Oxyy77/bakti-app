@@ -21,6 +21,8 @@ Route::get('/', function () {
     return view('welcome',[ "tittle" => 'Beranda']);
 })->name('home');
 
+
+
 //Route Member
 Route::middleware(['auth','checkRole:member'])->group(function (){
     Route::get('/dashboard', [MemberController::class, 'showDashboard']);
@@ -34,6 +36,7 @@ Route::middleware(['auth','checkRole:member'])->group(function (){
     Route::get('/buku-panduan', [Controller::class, 'showBukuPanduan']);
     Route::get('/pengenalan-ukm', [Controller::class, 'showPengenalanUKM']);
     Route::get('/sertifikat', [Controller::class, 'showSertifikat']);
+    Route::get('/form-kuis', [Controller::class, 'showKuisUKM']);
 });
 
 require __DIR__.'/auth.php';

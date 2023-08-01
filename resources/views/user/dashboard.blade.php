@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="card mb-4 tugas-box" style="width: 28rem; height:6rem">
-                        <div class="row upload-tugas">
+                        <div class="row upload-tugas1">
                             <div class="col-6 ms-5 upload-teks ">
                                 <div class="row">
                                     <div class="col upload-header">Resume Talkshow</div>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="card mb-4 tugas-box" style="width: 28rem; height:6rem">
-                        <div class="row upload-tugas">
+                        <div class="row upload-tugas1">
                             <div class="col-6 ms-5 upload-teks ">
                                 <div class="row">
                                     <div class="col upload-header">Resume Talkshow</div>
@@ -80,7 +80,7 @@
                             </div>
                         </div></div>
                     <div class="card mb-4 tugas-box-late" style="width: 28rem; height:6rem">
-                        <div class="row upload-tugas">
+                        <div class="row upload-tugas1">
                             <div class="col-6 ms-5 upload-teks">
                                 <div class="row">
                                     <div class="col upload-header-late">Resume Talkshow</div>
