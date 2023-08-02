@@ -1,5 +1,5 @@
 <nav>
-        <div class="row sidebar sidebar-main ">
+        <div id="sidebar-main" class="row sidebar sidebar-main ">
             <div class="col sidebar-col ">
                 <div class="sidebar-header">
                     <h2>Profile</h2>

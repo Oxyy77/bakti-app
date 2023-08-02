@@ -1,7 +1,6 @@
 <nav>
-    <div class="sidebar">
-        <div class="row">
-            <div class="col">
+    <div class="row sidebar sidebar-main">
+            <div class="col sidebar-col">
                 <div class="header">
                     <h2>Profile</h2>
                 </div>
@@ -44,7 +43,7 @@
                 </div> 
             </div>
             
-    </div>
+   
 
         </div>
         </nav>

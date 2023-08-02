@@ -140,7 +140,7 @@ nav{
 }
 
 .nav-logout {
-    margin-left: -20px;
+
     margin-top: 80px;
     margin-bottom: 156px;
 }e
@@ -178,6 +178,10 @@ nav{
     display: flex;
     align-items: center;
     margin-left: 3em; /* Atur jarak antara gambar profil dan teks */
+}
+
+.profile-info .burger {
+    display: none;
 }
 .profile-header {
     width: 24px;
@@ -1358,6 +1362,7 @@ top: 165px;
     /* background-color: rgba(0, 0, 0, 0.8);  */
     backdrop-filter: blur(5px); /* Efek blur */
     z-index: 9998; /* Lebih rendah dari pop-up agar pop-up tetap di atas */
+     transition: opacity 0.3s ease;
 }
 
 

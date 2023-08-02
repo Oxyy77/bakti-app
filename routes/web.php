@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Member\AssignmentController;
 use App\Http\Controllers\Member\MemberController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,10 @@ Route::get('/', function () {
     return view('welcome',[ "tittle" => 'Beranda']);
 })->name('home');
 
-
+// Route::get('/dashboard-admin', function () {
+//     return view('admin.dashboard-admin',[ "tittle" => 'Admin']);
+// })->name('home');
+Route::get('/dashboard-admin', [AdminController::class, 'index']);
 
 //Route Member
 Route::middleware(['auth','checkRole:member'])->group(function (){

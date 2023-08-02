@@ -1,5 +1,9 @@
 @media screen and (max-width: 480px) {
 
+    body{
+        height: 100%;
+    }
+
     .navbar-nav .nav-link{
         margin-top: 15px;
         margin-bottom: -50px;
@@ -47,13 +51,13 @@
         flex-wrap: nowrap;
     }
 
-    .col-4 {
+    /* .col-4 {
         margin-top: 16px;
         margin-left: 16px;
-    }
-    .col-9 {
+    } */
+    /* .col-9 {
         margin-top: 1em;
-    }
+    } */
 
 
     /* .col-4 {
@@ -170,17 +174,27 @@
     }
 
 
-    /* .sidebar-column{
+    .sidebar-column{
         width: 12%!important;
-    } */
+        z-index: 9999;
+    }
 
     .content-column{
-        padding: 0;
+        padding: 1rem 6%;
+        width: 100%;
+        z-index: 9998;
+    }
+
+    .line{
+        display: none;
     }
 
     .sidebar-main{
-        width: 10%;
+        width: 12%;
         display: none;
+        transition: transform 0.3s ease;
+        margin: 0;
+        position: fixed;
     }
 
     .sidebar-col{
@@ -209,7 +223,8 @@
 
     .nav-links{
         padding: 0;
-
+        margin-top: 4rem;
+        position: relative;
     }
 
     .nav-link,
@@ -223,6 +238,7 @@
     .nav-link img ,
     .nav-active img {
         margin: 0;
+        left: 0!important;
     }
 
     .nav-active img {
@@ -230,7 +246,11 @@
         left: 6px;
     }
 
-
+    .nav-logout{
+        margin-left:0;
+        position: absolute;
+        top: 100%;
+    }
     .welcome-header h2{
         font-size: 1rem;
     }
@@ -244,11 +264,60 @@
 
     /* dashboard */
 
+    .profile-info .burger{
+        display: flex;
+    }
+
+    .profile-info h4 {
+        display: flex!important;
+        color: #6C2863;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .profile-welcome{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .welcome-header {
+        margin-top: 0!important;
+    }
+
+    .welcome-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .dashboard-count{
+        margin-top: 9rem!important;
+    }
+
+    .dashboard-unduh{
+        position: absolute;
+        top: 160px;
+        width: 100%;
+    }
+
+    .download-content{
+        display: flex!important;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .download-content button{
+        
+        width: 100%;
+    }
+    
 
     .profile-info{
         display: flex;
         justify-content: space-between;
         margin: 0;
+        width: 100%;
         /* gap: 7.5rem; */
     }
 
@@ -268,6 +337,8 @@
         width: 100%;
         margin: 0;
         padding: 1rem 2%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .name-header {
@@ -289,8 +360,8 @@
     }
 
     .countdown-box {
-        width: 18rem!important;
-        height: 4rem!important;
+        width: 100%!important;
+        height: 4.25rem!important;
     }
 
     .countdown-fill{
@@ -303,9 +374,129 @@
         font-size: 1rem;
     }
 
+    .kolom-unduh{
+        justify-content: flex-start!important;
+    }
+
+    /* .card-body{
+        gap: 3rem;
+    } */
+
+    
+
     .card-body h6{
         font-size: 0.5rem;
     }
+
+    .tugas-header {
+        position: relative;
+    }
+
+    .upload-tugas1{
+        display: flex;
+    }
+
+    .upload-teks{
+        margin-left: 1rem!important;
+    }
+
+    .tugas-header a {
+        /* position: absolute; */
+        left: 15rem;
+    }
+
+    .tugas-header img{
+        width: 2rem;
+    }
+
+    .tugas-header h4{
+        font-size: 1rem;
+    }
+
+    .tugas-content{
+        width: 100%;
+    }
+
+    .tugas-box{
+        width: 100%!important;
+        height: 4rem!important;
+    }
+
+    .upload-header{
+        font-size: 0.7rem;
+    }
+
+    .deadline-upload{
+        font-size: 0.7rem;
+    }
+
+    .button-upload {
+        margin: 0;
+        display: flex;
+    }
+
+    .button-upload button{
+        background: transparent;
+        border: none;
+        margin: 0;
+
+    }
+
+    .kalender-content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .kalender-main{
+        margin-left: 0;
+    }
+
+    .kalender-content img {
+        width: 2rem;
+    }
+
+    .kalender-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-main {
+        margin: 0;
+        
+    }
+
+    .card-kegiatan{
+        flex-direction: column;
+    }
+
+    .kegiatan-content img {
+        width: 2rem;
+    }
+
+    .kegiatan-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-box{
+        width: 100%!important;
+        height: 3rem!important;
+    }
+
+    .kegiatan-header,
+    .ket-kegiatan{
+        font-size: 0.5rem;
+    }
+
+    .date-kegiatan{
+        align-items: center;
+    }
+
+    .date-kegiatan img{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-content: center;
+    }
+
 
     /* coming soon*/
 
@@ -383,8 +574,6 @@
     }
 
 }
-
-
 
 @media screen and (max-width: 576px) and (min-width: 480px) {
 
@@ -550,7 +739,7 @@
         top: -100px;
     }
 
-    /* .sidebar{
+    .sidebar{
         width: 10%;
         position: fixed;
         display: flex;
@@ -558,12 +747,36 @@
         height: 100%;
     }
 
+    .sidebar{
+        width: 10%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+
     .sidebar-column{
-        width: 16%!important;
-    } */
+        width: 12%!important;
+        z-index: 9999;
+    }
+
+    .content-column{
+        padding: 1rem 6%;
+        width: 100%;
+        z-index: 9998;
+    }
+
+    .line{
+        display: none;
+    }
 
     .sidebar-main{
-        width: 100%;
+        width: 14%;
+        display: none;
+        transition: transform 1s ease;
+        margin: 0;
+        position: fixed;    
     }
 
     .sidebar-col{
@@ -592,7 +805,8 @@
 
     .nav-links{
         padding: 0;
-
+        margin-top: 4rem;
+        position: relative;
     }
 
     .nav-link,
@@ -600,12 +814,13 @@
         width: 38px;
         margin-left: 0;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .nav-link img ,
     .nav-active img {
         margin: 0;
+        left: 0!important;
     }
 
     .nav-active img {
@@ -613,6 +828,11 @@
         left: 6px;
     }
 
+    .nav-logout{
+        margin-left:0;
+        position: absolute;
+        top: 100%;
+    }
     .welcome-header h2{
         font-size: 1rem;
     }
@@ -623,6 +843,254 @@
     .text-content{
 
     }
+
+    /* dashboard */
+
+    .profile-info .burger{
+        display: flex;
+    }
+
+    .profile-info h4 {
+        display: flex!important;
+        color: #6C2863;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .profile-welcome{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .welcome-header {
+        margin-top: 0!important;
+    }
+
+    .welcome-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .dashboard-count{
+        margin-top: 9rem!important;
+    }
+
+    .kolom-count{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    .dashboard-unduh{
+        position: absolute;
+        top: 160px;
+        width: 90%;
+    }
+
+    .download-content{
+        display: flex!important;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .download-content button{
+        
+        width: 100%;
+    }
+    
+    /* .kolom-unduh{
+        justify-content: flex-start!important;
+    } */
+
+    .profile-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        /* gap: 7.5rem; */
+    }
+
+    .profile-header{
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    .dashboard-main{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container-header{
+        width: 100%;
+        margin: 0;
+        padding: 1rem 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-header {
+        display: none;
+    }
+
+    .kolom1,
+    .kolom2 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .countdown-content img{
+        width: 2rem;
+    }
+
+    .countdown-content h4{
+        font-size: 1rem;
+    }
+
+    .countdown-box {
+        width: 100%!important;
+        height: 4.25rem!important;
+    }
+
+    .countdown-fill{
+        width: 2.5rem!important;
+        height: 2.5rem!important;
+        border-radius: 0.5rem;
+    }
+
+    .countdown-fill p{
+        font-size: 1rem;
+    }
+
+    /* .card-body{
+        gap: 3rem;
+    } */
+
+    
+
+    .card-body h6{
+        font-size: 0.5rem;
+    }
+
+    .tugas-header {
+        position: relative;
+    }
+
+    .upload-tugas1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .upload-teks{
+        margin-left: 1rem!important;
+    }
+
+    .col-4,
+    .col-9 {
+        margin: 0;
+    }
+
+    .tugas-header a {
+        /* position: absolute; */
+        left: 15rem;
+    }
+
+    .tugas-header img{
+        width: 2rem;
+    }
+
+    .tugas-header h4{
+        font-size: 1rem;
+    }
+
+    .tugas-content{
+        width: 100%;
+    }
+
+    .tugas-box{
+        width: 100%!important;
+        height: 4rem!important;
+    }
+
+    .upload-header{
+        font-size: 0.7rem;
+    }
+
+    .deadline-upload{
+        font-size: 0.7rem;
+    }
+
+    .button-upload {
+        margin: 0;
+        display: flex;
+    }
+
+    .button-upload button{
+        background: transparent;
+        border: none;
+        margin: 0;
+
+    }
+
+    .kalender-content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .kalender-main{
+        margin-left: 0;
+    }
+
+    .kalender-content img {
+        width: 2rem;
+    }
+
+    .kalender-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-main {
+        margin: 0;
+        
+    }
+
+    .card-kegiatan{
+        flex-direction: column;
+    }
+
+    .kegiatan-content img {
+        width: 2rem;
+    }
+
+    .kegiatan-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-box{
+        width: 100%!important;
+        height: 4rem!important;
+    }
+
+    .kegiatan-header,
+    .ket-kegiatan{
+        font-size: 0.7rem;
+    }
+
+    .date-kegiatan{
+        align-items: center;
+    }
+
+    .date-kegiatan img{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-content: center;
+    }
+
+   
 
     /* coming soon*/
 
@@ -699,11 +1167,6 @@
     }
 
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
     .navbar-nav .nav-link{
@@ -868,12 +1331,361 @@
         top: -100px;
     }
 
+    .sidebar{
+        width: 10%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .sidebar{
+        width: 10%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+
+    .sidebar-column{
+        width: 12%!important;
+        z-index: 9999;
+    }
+
+    .content-column{
+        padding: 1rem 6%;
+        width: 100%;
+        z-index: 9998;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .sidebar-main{
+        width: 12%;
+        display: none;
+        transition: transform 1s ease;
+        margin: 0;
+        position: fixed;    
+    }
+
+    .sidebar-col{
+        padding: 0;
+    }
+
+    .sidebar-header,
+    .sidebar-header h2{
+        display: none;
+    }
+
+    .nav-link img{
+
+    }
+    .link-name{
+        display: none;
+    }
+
+    .menu-items{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+
+
+    .nav-links{
+        padding: 0;
+        margin-top: 4rem;
+        position: relative;
+    }
+
     .nav-link,
     .nav-active {
         width: 38px;
         margin-left: 0;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+
+    .nav-link img ,
+    .nav-active img {
+        margin: 0;
+        left: 0!important;
+    }
+
+    .nav-active img {
+        position: relative;
+        left: 6px;
+    }
+
+    .nav-logout{
+        margin-left:0;
+        position: absolute;
+        top: 100%;
+    }
+    .welcome-header h2{
+        font-size: 1rem;
+    }
+    .welcome-header p{
+        font-size: 0.75rem;
+    }
+
+    .text-content{
+
+    }
+
+    /* dashboard */
+
+    .profile-info .burger{
+        display: flex;
+    }
+
+    .profile-info h4 {
+        display: flex!important;
+        color: #6C2863;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .profile-welcome{
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .welcome-header {
+        margin-top: 0!important;
+    }
+
+    .welcome-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .dashboard-count{
+        margin-top: 9rem!important;
+    }
+
+    .kolom-count{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    .dashboard-unduh{
+        position: absolute;
+        top: 160px;
+        width: 90%;
+    }
+
+    .download-content{
+        display: flex!important;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .download-content button{
+        
+        width: 100%;
+    }
+    
+    /* .kolom-unduh{
+        justify-content: flex-start!important;
+    } */
+
+    .profile-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        /* gap: 7.5rem; */
+    }
+
+    .profile-header{
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    .dashboard-main{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container-header{
+        width: 100%;
+        margin: 0;
+        padding: 1rem 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-header {
+        display: none;
+    }
+
+    .kolom1,
+    .kolom2 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .card-body{
+        gap: 0;
+    }
+
+
+    .countdown-content img{
+        width: 2rem;
+    }
+
+    .countdown-content h4{
+        font-size: 1rem;
+    }
+
+    .countdown-box {
+        width: 100%!important;
+        height: 4.75rem!important;
+    }
+
+    .countdown-fill{
+        width: 3rem!important;
+        height: 3rem!important;
+        border-radius: 0.5rem;
+    }
+
+    .countdown-fill p{
+        font-size: 1rem;
+    }
+
+    /* .card-body{
+        gap: 3rem;
+    } */
+
+    
+
+    .card-body h6{
+        font-size: 0.75rem;
+    }
+
+    .tugas-header {
+        position: relative;
+    }
+
+    .upload-tugas1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .upload-teks{
+        margin-left: 1rem!important;
+    }
+
+    .col-4,
+    .col-9 {
+        margin: 0;
+    }
+
+    .tugas-header a {
+        /* position: absolute; */
+        left: 25rem;
+    }
+
+    .tugas-header img{
+        width: 2rem;
+    }
+
+    .tugas-header h4{
+        font-size: 1rem;
+    }
+
+    .tugas-content{
+        width: 100%;
+    }
+
+    .tugas-box{
+        width: 100%!important;
+        height: 4.5rem!important;
+    }
+
+    .upload-header{
+        font-size: 0.9rem;
+    }
+
+    .deadline-upload{
+        font-size: 0.9rem;
+    }
+
+    .button-upload {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-upload button{
+        background: transparent;
+        border: none;
+        margin: 0;
+
+    }
+
+    .kalender-content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .kalender-main{
+        margin-left: 0;
+    }
+
+    .kalender-content img {
+        width: 2rem;
+    }
+
+    .kalender-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-main {
+        margin: 0;
+        
+    }
+
+    .card-kegiatan{
+        flex-direction: column;
+    }
+
+    .kegiatan-content img {
+        width: 2rem;
+    }
+
+    .kegiatan-content h4{
+        font-size: 1rem;
+    }
+
+    .kegiatan-box{
+        width: 100%!important;
+        height: 4rem!important;
+    }
+
+    .kegiatan-header,
+    .ket-kegiatan{
+        font-size: 0.7rem;
+    }
+
+    .date-kegiatan{
+        align-items: center;
+    }
+
+    .date-kegiatan img{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-content: center;
     }
 
     /* coming soon*/

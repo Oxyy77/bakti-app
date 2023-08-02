@@ -11,6 +11,96 @@
     <link rel="stylesheet" href="css/user.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+<style>
+    .wrapper{
+  width: 22rem;
+  height: 19rem;
+  background: var(--50, #FDF6FD);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: center;
+  width: 100%;
+}
+header .icons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#prev,
+#next{
+    width: 8px;
+    cursor: pointer
+}
+
+header .current-date{
+  color: #6C2863;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;    
+}
+.calendar{
+  padding: 5px;
+}
+
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding: 0
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #000;
+  width: calc(100% / 7);
+  font-size: 0.6rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #6C2863;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+</style>
+    
 </head>
 <body>
 
@@ -52,7 +142,27 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="js/main.js" ></script>
+<script src="js/kalender.js" ></script>
 <script>
+ document.addEventListener("DOMContentLoaded", function() {
+    var burgerIcon = document.querySelector(".burger");
+    var sidebar = document.getElementById("sidebar-main");
+    var overlay = document.getElementById("overlay");
+
+    burgerIcon.addEventListener("click", function() {
+        // Toggle the sidebar when the burger icon is clicked
+        if (sidebar.style.display === "none") {
+            sidebar.style.display = "block";
+            overlay.style.display = "block";
+            document.body.style.overflow = "hidden"; // Tambahkan kode ini untuk mengatur overflow menjadi "hidden"
+        } else {
+            sidebar.style.display = "none";
+            overlay.style.display = "none";
+            document.body.style.overflow = "auto"; // Tambahkan kode ini untuk mengatur overflow menjadi "auto" kembali
+        }
+    });
+});
+
 
 </script>
 </body>
