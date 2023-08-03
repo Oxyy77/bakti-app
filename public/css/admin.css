@@ -163,7 +163,7 @@ nav{
 }
 
 .form-control{
-    padding: 4px 48px;
+    padding: 4px 64px 4px 64px;
     border-radius: 10px;
     border: 1px solid rgba(108, 40, 99, 0.50);
     background: #FFF;
@@ -176,6 +176,128 @@ nav{
 
 .search-container img{
     position: absolute;
-    left: 15px;
+    left: 3rem;
     top: 8px;
 }
+
+/* Mengatur ketinggian maksimum dropdown */
+.pilih-kelompok{
+    border-radius: 10px;
+background: #6C2863;
+    
+    color: var(--50, #FDF6FD);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    --bs-form-select-bg-img: url(../img/down2.svg)!important;
+}
+
+  .absen-main{
+    padding: 3rem;
+  }
+
+  .absen-header,
+  .tugas-header,
+  .kuis-header{
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .absen-fill,
+  .tugas-fill,
+  .kuis-fill{
+
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .pilih-absen{
+    display: flex;
+    width: 110px;
+    height: 22px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #6C2863;
+    color: var(--50, #FDF6FD);
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+  }
+
+  .pilih-absen option{
+    border-radius: 10px;
+    background: var(--100, #FBEBFC);
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .lihat-tugas {
+    font-size: 10px;
+    width: 80px;
+    height: 22px;
+    padding: 4px;
+    background: #6C2863;
+  }
+
+  .btn-download-tugas{
+    background: #6C2863;
+    width: 80px;
+    height: 22px;
+    padding: 4px;
+    font-size: 10px;
+    color: #FBEBFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-download-tugas:hover{
+    background: #6C2863;
+    color: #FBEBFC;
+  }
+
+  .answer-kuis textarea{
+    border-radius: 0.9375rem;
+    border: 1px solid #B0B0B0;
+    background: #F4F4F4;
+    margin-bottom: 1.5rem;
+    color: #6C2863;
+}
+
+.answer-kuis label{
+    margin-bottom: 1rem;
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.btn-kuis{
+    padding: 6px 2rem;
+}
+  
+  
+

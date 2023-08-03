@@ -24,10 +24,10 @@
                                 <span class="link-name">Tugas</span>
                             </a>
                         </li>
-                        <li class="nav-link {{ $currentPage === 'pemberitahuan' ? 'nav-active' : '' }}">
-                            <a class=" {{ $currentPage === 'pemberitahuan' ? 'active' : '' }} " href="/pemberitahuan">
-                                <img src="{{ $currentPage === 'pemberitahuan' ? 'img/panduan-av.svg' : 'img/panduan.svg' }}" alt="">
-                                <svg class=" {{ $currentPage === 'pemberitahuan' ? 'line' : 'none' }} " xmlns="http://www.w3.org/2000/svg" width="10" height="36" viewBox="0 0 8 44" fill="none">
+                        <li class="nav-link {{ $currentPage === 'kuis' ? 'nav-active' : '' }}">
+                            <a class=" {{ $currentPage === 'kuis' ? 'active' : '' }} " href="/kuis">
+                                <img src="{{ $currentPage === 'kuis' ? 'img/panduan-av.svg' : 'img/panduan.svg' }}" alt="">
+                                <svg class=" {{ $currentPage === 'kuis' ? 'line' : 'none' }} " xmlns="http://www.w3.org/2000/svg" width="10" height="36" viewBox="0 0 8 44" fill="none">
                                     <path d="M4 40L4 4" stroke="#F9FBFB" stroke-width="8" stroke-linecap="round"/>
                                   </svg>
                                 <span class="link-name">Kuis UKM</span>

@@ -25,7 +25,6 @@
       @include('partials.sidebar-admin')
     </div>
     <div class="col-9 content-column">
-      
       <div class="row tabel-absen">
         <div class="col absen-main ">
           <div class="row">   
@@ -44,54 +43,47 @@
                 <option value="6">Six</option>
               </select>
              </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-md-6">
-              <div class="row absen-header">
-                <div class="col-md-3">No Absen</div>
-                <div class="col-md-3">NIM</div>
-                <div class="col-md-3">Nama</div>
-                <div class="col-md-3">Kelompok</div>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex absen-header justify-content-center">Detail</div>
-          </div>
-          <div class="row mt-2">
-            <div class="col-md-6">
-              <div class="row absen-fill">
-                <div class="col-md-3">1</div>
-                <div class="col-md-3">2111512011</div>
-                <div class="col-md-3">Ilham</div>
-                <div class="col-md-3">AI</div>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex absen-header justify-content-center">
-              <div class="row">
-                <div class="col-md-6">
-                  <select class="form-select pilih-absen" aria-label="Default select example">
-                    <option selected>Day 1</option>
-                    <option value="1">Hadir</option>
-                    <option value="2">Alpha</option>
-                    <option value="3">Izin</option>
-                    <option value="4">Sakit</option>
-                  </select>
+             <div class="row mt-5">
+              <div class="col-md-6">
+                <div class="row kuis-header">
+                  <div class="col-md-3">No Absen</div>
+                  <div class="col-md-3">NIM</div>
+                  <div class="col-md-3">Nama</div>
+                  <div class="col-md-3">Kelompok</div>
                 </div>
-                <div class="col-md-6">
-                  <select class="form-select pilih-absen" aria-label="Default select example">
-                    <option selected>Day 2</option>
-                    <option value="1">Hadir</option>
-                    <option value="2">Alpha</option>
-                    <option value="3">Sakit</option>
-                    <option value="4">Three</option>
-                  </select>
+              </div>
+              <div class="col-md-6 kuis-header">
+                <div class="row ">
+                  <div class="col-md-4">Neo Telemetri</div>
+                  <div class="col-md-4">Aisec</div>
+                  <div class="col-md-4">Penalaran</div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="row kuis-fill">
+                  <div class="col-md-3">1</div>
+                  <div class="col-md-3">2111512011</div>
+                  <div class="col-md-3">Ilham</div>
+                  <div class="col-md-3">AI</div>
+                </div>
+              </div>
+              <div class="col-md-6 kuis-header">
+                <div class="row ">
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-download-tugas">Lihat</button>
+                  </div>
+                  <div class="col-md-4">  <button type="button" class="btn btn-download-tugas">Lihat</button></div>
+                  <div class="col-md-4">  <button type="button" class="btn btn-download-tugas">Lihat</button></div>
+                </div>
+              </div>
+            </div>
+    </div>
+</div>
       </div>
- 
-  </div>
+    </div>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/main.js" ></script>

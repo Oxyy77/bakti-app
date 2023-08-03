@@ -26,6 +26,9 @@ Route::get('/', function () {
 //     return view('admin.dashboard-admin',[ "tittle" => 'Admin']);
 // })->name('home');
 Route::get('/dashboard-admin', [AdminController::class, 'index']);
+Route::get('/tugas', [AdminController::class, 'indexTugas']);
+Route::get('/kuis', [AdminController::class, 'indexKuis']);
+Route::get('/form-kuis-admin', [AdminController::class, 'indexFormKuis']);
 
 //Route Member
 Route::middleware(['auth','checkRole:member'])->group(function (){

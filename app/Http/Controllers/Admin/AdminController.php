@@ -13,4 +13,21 @@ class AdminController extends Controller
  
         return view('admin.dashboard-admin', compact('currentPage'));
     }
+
+    public function indexTugas(){
+        $currentPage = 'tugas';
+ 
+        return view('admin.tugas', compact('currentPage'));
+    }
+
+    public function indexKuis(){
+        $currentPage = 'kuis';
+ 
+        return view('admin.kuis', compact('currentPage'));
+    }
+    public function indexFormKuis(){
+        $currentPage = 'kuis';
+ 
+        return view('admin.form-kuis-admin', compact('currentPage'));
+    }
 }
