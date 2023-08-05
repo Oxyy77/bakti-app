@@ -5,33 +5,33 @@
      <p>Daftar Akun</p></div>
 
         <div class="row mb-3 costum-margin justify-content-center">
-          <div class="col-9">
-            <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" >
+          <div class="col-9 form-column ">
+            <input type="text" name="name" class="form-control form-daftar" placeholder="Nama Lengkap" >
           </div>
         </div>
         <div class="row mb-3 costum-margin justify-content-center">
-          <div class="col-9">
-            <input type="text" name="nim" class="form-control" placeholder="NIM" >
+          <div class="col-9 form-column">
+            <input type="text" name="nim" class="form-control form-daftar" placeholder="NIM" >
           </div>
         </div>
         <div class="row mb-3 costum-margin justify-content-center">
-          <div class="col-9">
-            <input type="email" name="email" class="form-control" placeholder="Email" >
+          <div class="col-9 form-column">
+            <input type="email" name="email" class="form-control form-daftar" placeholder="Email" >
           </div>
         </div>
         <div class="row mb-3 costum-margin justify-content-center">
-          <div class="col-9 input-password">
-            <input type="password" name="password" id="sandiDaftar3" class="form-control" placeholder="Password" aria-label="First name">
+          <div class="col-9 form-column input-password">
+            <input type="password" name="password" id="sandiDaftar3" class="form-control form-password" placeholder="Password" aria-label="First name">
          <span class="show-password-icon"><img id="eyeicon3" src="img/eye-slash.svg" alt=""></span>
           </div>
         </div>
-        <div class="row mb-4 justify-content-center">
-          <div class="col-9 input-password">
-            <input type="password" name="password_confirmation" id="sandiDaftar4" class="form-control" placeholder="Password" aria-label="First name">
+        <div class="row mb-4 costum-margin justify-content-center">
+          <div class="col-9 form-column input-password">
+            <input type="password" name="password_confirmation" id="sandiDaftar4" class="form-control form-password" placeholder="Password" aria-label="First name">
          <span class="show-password-icon"><img id="eyeicon4" src="img/eye-slash.svg" alt=""></span>
           </div>
         </div>
-        <div class="row mb justify-content-center">
+        <div class="row button-row mb justify-content-center">
             <button type="submit" class="btn btn-nav btn-first button-daftar">Daftar</button>
         </div>
       </div>

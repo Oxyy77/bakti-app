@@ -3,6 +3,12 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    /* padding-top: 100px; */
+}
+
+.container-fluid{
+    margin:0!important;
+    padding: 0!important;
 }
 .overlay {
     position: fixed;
@@ -71,7 +77,7 @@ input[type="password"]::-ms-reveal {
 }
 
 .daftar input[type="password"] {
-    padding: 0.75rem 3rem;
+    padding: 0.75rem 3rem 0.75rem 1.5rem;
 }
 
 .daftar input[type="text"]::placeholder,
@@ -117,6 +123,10 @@ nav {
     z-index: 999;
 }
 
+#navbar{
+    height: 100px;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -155,8 +165,8 @@ nav {
 
 #closeIcon2 {
     position: absolute;
-    top: -132px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     cursor: pointer;
     width: 18px; /* Sesuaikan ukuran gambar */
     height: 18px; /* Sesuaikan ukuran gambar */
@@ -252,6 +262,10 @@ nav {
     color: #fff;
 }
 
+#sandiMasuk {
+    padding: 0.75rem 4rem 0.75rem 1.5rem;
+}
+
 .checkbox,
 .forget-password{
     color: #6c2863;
@@ -261,6 +275,7 @@ nav {
 
 .forget-password{
     margin-top: -2rem;
+    justify-content: end;
 }
 
 .checkbox{
@@ -276,7 +291,15 @@ nav {
 
 
 #hero{
-    height: 100vh;
+    height:calc(100vh - 100px);
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.komputer{
+    height: 84% !important;
 }
 
 #hero img {
@@ -284,18 +307,18 @@ nav {
     height: fit-content;
     display: block;
     justify-content: end;
-    margin-top: 170px;
+    /* margin-top: 170px; */
 }
 
 #intro {
-    margin-top: 2rem;
     background-color: rgba(253, 246, 253, 1);
-    padding: 0 0 4rem 0;
+   padding: 3rem 5%;
+   height: calc(100vh - 100px);
 
 }
 
 #intro img {
-    margin-top: 50px;
+
     width: 100%;
     display: block;
     margin-left: auto;
@@ -306,9 +329,8 @@ nav {
 
 
 #intro p {
-    margin-top: 100px;
     position: relative;
-    left: 36px;
+    left: 100px;
     text-align: justify;
     text-justify: inter-word;
     color: #221737;
@@ -371,15 +393,18 @@ nav {
     font-weight: 400;
 }
 
+#timeline{
+    height: calc(100vh - 100px);
+    padding: 3rem 5%;
+}
 
-
-.timeline-header {
-    margin-top: 100px;
+.timeline-header img {
+  width: 35%;
 }
 
 .timeline-main img {
-    margin-top: 50px;
-    padding: 0 0 100px 0;
+   width: 65%;
+   margin-top: 3rem;
 }
 
 #anthem {
@@ -387,28 +412,31 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;
-
+    padding: 3rem 5%;
+    height: calc(100vh - 100px);
 }
 
-.anthem-header {
-    margin-top: 100px;
-    margin-bottom: 2rem;
-
+.anthem-main {
+  margin-top: 2rem; 
 }
 
-.anthem-main img {
-    margin-top: 50px;
-    padding: 0 0 100px 0;
+.anthem-header img {
+    width: 35%;
+}
+
+#dokumentasi {
+    height: calc(100vh - 100px);
+    padding: 3rem 5%;
 }
 
 .dokumentasi-header {
-    margin-top: 100px;
+
 }
 
 .dokumentasi-main img {
     margin-top: 50px;
-    padding: 0 0 100px 0;
+    width: 90%;
+    height: 80%;
 }
 
 .footer {
@@ -642,6 +670,163 @@ a {
     margin-bottom: 3rem;
 }
 
+/* Maskot */
 
+#introduce {
+    height: calc(100vh - 100px);
+    padding: 3rem 5%;
+ 
+}
 
+.maskot-header{
+    width: 17.5rem;
+    height: 6.34rem;
+}
 
+.maskot-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maskot{
+    width: 200px;
+    height: 242px;
+}
+
+#ronand,
+#tinan,
+#anan{
+    height: calc(100vh - 100px);
+    padding: 3rem 10rem;
+}
+
+.ronand-main,
+.tinan-main,
+.anan-main{
+    /* padding: 8rem; */
+    border-radius: 1.5625rem;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ronand-fill1,
+.ronand-fill2,
+.ronand-fill3,
+.tinan-fill1,
+.tinan-fill2,
+.tinan-fill3,
+.anan-fill1,
+.anan-fill2,
+.anan-fill3{
+    background: var(--100, #FBEBFC);
+    height: calc(100% - 75px);
+    padding: 2.5rem;
+}
+
+.ronand-fill1,
+.tinan-fill1,
+.anan-fill1{
+    border-top-left-radius: 1.5625rem;
+    border-bottom-left-radius:1.5625rem ;
+    display: flex;
+    /* justify-content: center; */
+    /* position: relative; */
+    flex-direction: column;
+}
+
+.ronand-fill1 img,
+.anan-fill1 img{
+    width: 200px;
+    height: 263px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ronand-fill1 p,
+.anan-fill1 p{
+    color: #6C2863;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ronand-fill3,
+.tinan-fill3,
+.anan-fill3{
+    border-top-right-radius: 1.5625rem;
+    border-bottom-right-radius:1.5625rem ;
+}
+
+.ronand-filo,
+.tinan-filo,
+.anan-filo{
+    color: #6C2863;
+    text-align: center;
+    font-family: Poppins;
+  
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ronand-filo{
+    font-size: 1rem;
+}
+
+.tinan-filo,
+.anan-filo{
+    font-size: 1.25rem;
+}
+
+.ronand-mean,
+.tinan-mean,
+.anan-mean{
+    color: #6C2863;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.ronand-mean{
+    font-size: 0.75rem;
+}
+
+.tinan-mean,
+.anan-mean{
+    font-size: 1rem;
+}
+
+.tinan-fill3 img{
+    width: 200px;
+    height: 263px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tinan-fill3 p{
+    color: #6C2863;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* peta */
+
+#peta{
+    height: calc(100vh - 100px);
+    padding: 2rem 5%;
+}
+
+ 

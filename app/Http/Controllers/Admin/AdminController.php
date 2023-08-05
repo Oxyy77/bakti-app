@@ -30,4 +30,10 @@ class AdminController extends Controller
  
         return view('admin.form-kuis-admin', compact('currentPage'));
     }
+
+    public function indexLihatKuis(){
+        $currentPage = 'kuis';
+ 
+        return view('admin.lihat-kuis', compact('currentPage'));
+    }
 }

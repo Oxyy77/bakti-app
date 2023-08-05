@@ -2,21 +2,23 @@
 
 @section('content')
 
+
+
     <div class="nav-logo">
         <img src="/img/logo-unand.png" alt="Bootstrap" width="42" height="42">
         <img src="/img/logo-bakti.png" alt="Bootstrap" width="42" height="42">
-
     </div>
 
     <!-- ========== Start Login ========== -->
     <section id="hero">
         <div class="container hero-main">
             <div class="row hero">
-                <div class="col-4">
+                <div class="col-4 hero-content">
+                     <img class="color-grad" src="img/color.svg" style="display: none" alt="">
                     <div data-aos="zoom-in" data-aos-duration="1000" class="bakti">
                         <img src="img/bakti2023.svg" class="img-fluid" alt="Bakti2023" >
                     </div>
-                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <div class="d-grid gap-2 button-hero col-6 mx-auto">
                         <button class="btn btn-style btn-first mt-5 fw-600" type="button" onclick="showLoginBox()" >
                             Masuk
                             <form method="POST" action="{{ route('login') }}" id="loginBox" class="login-box" style="display: none" >
@@ -24,7 +26,7 @@
                                 <div class="row justify-content-center mb-4">
                                     <h2>Masuk Akun</h2>
                                 </div>
-                                <div class="row justify-content-center g-5 mb-4">
+                                <div class="row login-nim  justify-content-center g-5 mb-4">
                                     <div class="col-sm-8">
                                         <div class="row justify-content-center"><input type="text" name="nim" class="form-control input" placeholder="NIM" aria-label="First name"></div>
                                     </div>
@@ -40,7 +42,7 @@
                                             @if (Route::has('password.request'))
                                             <div class="col-md-7">
                                                 <a href="{{ route('password.request') }}">
-                                                    <div class="row mb-4 justify-content-end forget-password">
+                                                    <div class="row mb-4 forget-password">
 
                                                              Forgot Password
                                                     </div>
@@ -58,9 +60,9 @@
                         <button class="btn btn-style btn-second" type="button">ID Card</button>
                     </div>
                 </div>
-                <div class="col-8  d-flex justify-content-end">
+                <div class="col-8 hero-content2  d-flex justify-content-end">
                     <div data-aos="zoom-in" data-aos-duration="1000" class="col-8">
-                        <img src="img/komputer.svg" class="img-fluid" alt="Bakti2023" >
+                        <img src="img/komputer.svg" class="img-fluid komputer" alt="Bakti2023" >
                     </div>
                 </div>
             </div>
@@ -72,12 +74,12 @@
     <section id="intro">
         <div class="container text-center intro-main">
             <div class="row intro-row1 ">
-                <div data-aos="fade-up                                              " data-aos-duration="1000" class="col-md-4 me-5 mt-5 intro-img">
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-4 me-5 intro-img">
                     <img src="img/intro.svg" alt="">
                 </div>
                 <div class="col-md-6 intro-text">
                     <div class="row">
-                        <p data-aos="fade-up" data-aos-duration="1000" class="" > <strong>BAKTI</strong>(Bimbingan Aktivitas Kemahasiswaan dalam Tradisi Ilmiah) adalah kegiatan <strong>pengenalan</strong> terhadap<strong>, tradisi ilmiah dan pembinaan kegiatan kemahasiswaan</strong> di perguruan tinggi bagi <strong> mahasiswa baru Universitas Andalas</strong> </p>
+                        <p data-aos="fade-up" data-aos-duration="1000" class="" ><strong>BAKTI</strong>(Bimbingan Aktivitas Kemahasiswaan dalam Tradisi Ilmiah) adalah kegiatan <strong>pengenalan</strong> terhadap<strong>, tradisi ilmiah dan pembinaan kegiatan kemahasiswaan</strong> di perguruan tinggi bagi <strong> mahasiswa baru Universitas Andalas</strong> </p>
                     </div>
 
                 </div>
@@ -162,7 +164,7 @@
             </div>
             <div class="row ">
                 <div class="col d-flex justify-content-center anthem-main">
-                    <div class="card " style="width: 50rem;">
+                    <div class="card " style="width: 40rem;">
                         {{-- <div class="card-body">
                         </div> --}}
                         <div class="ratio ratio-16x9">

@@ -43,45 +43,41 @@
                 <option value="6">Six</option>
               </select>
              </div>
-             <div class="row mt-5">
-              <div class="col-md-6">
-                <div class="row kuis-header">
-                  <div class="col-md-3">No Absen</div>
-                  <div class="col-md-3">NIM</div>
-                  <div class="col-md-3">Nama</div>
-                  <div class="col-md-3">Kelompok</div>
-                </div>
-              </div>
-              <div class="col-md-6 kuis-header">
-                <div class="row ">
-                  <div class="col-md-4">Neo Telemetri</div>
-                  <div class="col-md-4">Aisec</div>
-                  <div class="col-md-4">Penalaran</div>
-                </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-10">
+              <div class="row kuis-header">
+                <div class="col-md-3">No Absen</div>
+                <div class="col-md-3">NIM</div>
+                <div class="col-md-3">Nama</div>
+                <div class="col-md-3">Kelompok</div>
               </div>
             </div>
+            <div class="col-md-2 kuis-header">
+              <div class="row ">
+                <div class="col-md-4">Detail</div>
 
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="row kuis-fill">
-                  <div class="col-md-3">1</div>
-                  <div class="col-md-3">2111512011</div>
-                  <div class="col-md-3">Ilham</div>
-                  <div class="col-md-3">AI</div>
-                </div>
-              </div>
-              <div class="col-md-6 kuis-header">
-                <div class="row ">
-                  <div class="col-md-4">
-                    <button type="button" class="btn btn-download-tugas">Lihat</button>
-                  </div>
-                  <div class="col-md-4">  <button type="button" class="btn btn-download-tugas">Lihat</button></div>
-                  <div class="col-md-4">  <button type="button" class="btn btn-download-tugas">Lihat</button></div>
-                </div>
               </div>
             </div>
-    </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-10">
+              <div class="row kuis-fill">
+                <div class="col-md-3">1</div>
+                <div class="col-md-3">2111512011</div>
+                <div class="col-md-3">Ilham</div>
+                <div class="col-md-3">AI</div>
+              </div>
+            </div>
+            <div class="col-md-2 kuis-header">
+              <div class="row ">
+                <button type="button" class="btn btn-download-tugas">Lihat</button>
+              </div>
+            </div>
+          </div>
+
 </div>
+
       </div>
     </div>
   

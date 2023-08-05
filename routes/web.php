@@ -22,12 +22,21 @@ Route::get('/', function () {
     return view('welcome',[ "tittle" => 'Beranda']);
 })->name('home');
 
+Route::get('/maskot', function () {
+    return view('maskot',[ "tittle" => 'Maskot']);
+})->name('home');
+
+Route::get('/peta', function () {
+    return view('peta',[ "tittle" => 'Peta']);
+})->name('home');
+
 // Route::get('/dashboard-admin', function () {
 //     return view('admin.dashboard-admin',[ "tittle" => 'Admin']);
 // })->name('home');
 Route::get('/dashboard-admin', [AdminController::class, 'index']);
 Route::get('/tugas', [AdminController::class, 'indexTugas']);
 Route::get('/kuis', [AdminController::class, 'indexKuis']);
+Route::get('/lihat-kuis', [AdminController::class, 'indexLihatKuis']);
 Route::get('/form-kuis-admin', [AdminController::class, 'indexFormKuis']);
 
 //Route Member

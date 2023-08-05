@@ -280,7 +280,7 @@ background: #6C2863;
     border: 1px solid #B0B0B0;
     background: #F4F4F4;
     margin-bottom: 1.5rem;
-    color: #6C2863;
+    color: #6C2863  ;
 }
 
 .answer-kuis label{
@@ -299,5 +299,35 @@ background: #6C2863;
     padding: 6px 2rem;
 }
   
+
+/* Tambahkan style berikut pada CSS Anda */
+.ukm-header {
+    overflow-x: hidden; /* Hide the horizontal overflow */
+  }
+  
+  .scrollable {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent the content from wrapping */
+  }
+  
+  /* Add width to the rows to fit the content */
+  .scrollable .row {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* Optional styling to make it look like a chatbox
+  .ukm-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .scrollable .row:nth-child(2n) {
+    background-color: #fff;
+  } */
+  
+
+  
+ 
   
 
